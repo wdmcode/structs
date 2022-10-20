@@ -27,7 +27,7 @@ and declare a struct:
 
 ```go
 type Server struct {
-	Name        string `json:"name,omitempty"`
+	Name        string `structs:"name,omitempty"` // default tag
 	ID          int
 	Enabled     bool
 	users       []string // not exported
